@@ -3,12 +3,12 @@ import * as script from "./main.js";
 $("document").ready(function () {
   // dark-light
   $(".dark-light-c").click(function () {
-    if ($(":root").hasClass("light-theme")) {
-      $(":root").removeClass("light-theme");
-      $(":root").addClass("dark-theme");
-    } else {
+    if ($(":root").hasClass("dark-theme")) {
       $(":root").removeClass("dark-theme");
       $(":root").addClass("light-theme");
+    } else {
+      $(":root").removeClass("light-theme");
+      $(":root").addClass("dark-theme");
     }
   });
 

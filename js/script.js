@@ -11,23 +11,23 @@ $("document").ready(function () {
       $(":root").addClass("light-theme");
     }
   });
+
+  // humburger menu
+  $(".bx-menu").click(function () {
+    $(".nav-col-menu").css("display", "block");
+    $(".bx-menu").css("display", "none");
+    $(".bx-x").css("display", "block");
+  });
+
+  // close menu
+  $(".bx-x").click(function () {
+    $(".nav-col-menu").css("display", "none");
+    $(".bx-x").css("display", "none");
+    $(".bx-menu").css("display", "block");
+  });
   // function on screen < 769px
   $(window).resize(function () {
     if ($(window).width() < 769) {
-      // humburger menu
-      $(".bx-menu").click(function () {
-        $(".nav-col-menu").css("display", "block");
-        $(".bx-menu").css("display", "none");
-        $(".bx-x").css("display", "block");
-      });
-
-      // close menu
-      $(".bx-x").click(function () {
-        $(".nav-col-menu").css("display", "none");
-        $(".bx-x").css("display", "none");
-        $(".bx-menu").css("display", "block");
-      });
-
       // close menu when sub menu click
       $("li").click(function () {
         $(".nav-col-menu").css("display", "none");

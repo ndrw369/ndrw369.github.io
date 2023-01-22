@@ -329,6 +329,28 @@ p {
   cursor: pointer;
 }
 
+.btn-testi {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-testi a {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  border-radius: 9px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.btn-testi a:hover {
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  background-color: transparent;
+}
+
 /* about me section style */
 .about {
   background-color: var(--light);
